@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CarouselView">
+        <!--Indicates the image to be shown in case image loading fails-->
+        <attr name="failedImage" format="reference|color" />
+        <!--Indicates the image to be shown while the image loading is in progress-->
+        <attr name="placeholderImage" format="reference|color" />
+        <!--Indicated the load factor, i.e part of image to be shown before showing the actual image-->
+        <attr name="thumbnailLoadFactor" format="float" />
+        <!--Indicates to show the current item position or not on top of all contents-->
+        <attr name="showPageNumbers" format="boolean" />
+        <!--Indicates the paging style for internal page indicator-->
+        <attr name="pagingStyle" format="enum">
+            <enum name="none" value="0" />
+            <enum name="color" value="1" />
+            <enum name="scale" value="2" />
+            <enum name="slide" value="3" />
+            <enum name="worm" value="4" />
+            <enum name="fill" value="5" />
+            <enum name="thin_worm" value="6" />
+            <enum name="drop" value="7" />
+            <enum name="swap" value="8" />
+            <enum name="scale_down" value="9" />
+        </attr>
+        <!--Indicates the primary color to be used for internal views-->
+        <attr name="primaryColor" format="reference|color" />
+        <!--Indicates the accent color to be used for views-->
+        <attr name="accentColor" format="reference|color" />
+        <!--Describes the image scaling-->
+        <attr name="imageScaling" format="enum">
+            <enum name="matrix" value="0" />
+            <enum name="fitXY" value="1" />
+            <enum name="fitStart" value="2" />
+            <enum name="fitCenter" value="3" />
+            <enum name="fitEnd" value="4" />
+            <enum name="center" value="5" />
+            <enum name="centerCrop" value="6" />
+            <enum name="centerInside" value="7" />
+        </attr>
+    </declare-styleable>
+</resources>

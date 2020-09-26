@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CarouselKit</string>
+    <string name="btn_gallery"><![CDATA[gallery >]]></string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/controlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/galleryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10sp"
+            android:shadowRadius="20"
+            android:text="@string/btn_gallery"
+            android:textAllCaps="false"
+            app:cornerRadius="20sp" />
+    </RelativeLayout>
+
+    <com.github.chiragji.carouselkit.CarouselView
+        android:id="@+id/carousel"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:layout_below="@id/controlHeader"
+        android:layout_centerInParent="true"
+        app:accentColor="@color/colorGray"
+        app:failedImage="@drawable/ic_album_placeholder"
+        app:imageScaling="fitCenter"
+        app:pagingStyle="thin_worm"
+        app:primaryColor="@color/colorPrimaryDark"
+        app:showPageNumbers="true"
+        app:thumbnailLoadFactor="0.2" />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carousel"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30sp"
+        app:piv_animationType="scale_down"
+        app:piv_dynamicCount="true"
+        app:piv_selectedColor="@color/colorPrimaryDark"
+        app:piv_unselectedColor="@color/colorGray" />
+</RelativeLayout>

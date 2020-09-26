@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lbl_carousel_image">Carousel Image</string>
+    <string name="fmt_page_number">%d/%d</string>
+    <string name="sample_number">1/10</string>
+</resources>
